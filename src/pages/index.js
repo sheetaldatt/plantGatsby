@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { ReactiveBase, DataSearch, MultiDataList, ResultList, SingleRange, DynamicRangeSlider } from '@appbaseio/reactivesearch';
-import Checkout from "../components/checkout"
 
 import Layout from '../components/layout'
 
