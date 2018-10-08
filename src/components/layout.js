@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
         <Helmet title={data.site.siteMetadata.title}>
            <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/base/snipcart.css" rel="stylesheet" />
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-           <script type="text/javascript" id="snipcart" data-api-key="NzYwODU5YWEtOGY2Mi00ZTZmLWIxZTItMTE1NjNhNzg5ZmQ4NjM2NzQ1NzYxNjI1MjUwMzc2" src="https://cdn.snipcart.com/scripts/snipcart.js"></script>
+           <script type="text/javascript" id="snipcart" data-api-key="NzYwODU5YWEtOGY2Mi00ZTZmLWIxZTItMTE1NjNhNzg5ZmQ4NjM2NzQ1NzYxNjI1MjUwMzc2" src="https://cdn.snipcart.com/scripts/snipcart.js"  data-autopop="false">></script>
         >
           <html lang="en" />
         </Helmet>
@@ -35,6 +35,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+         
           {children}
         </div>
       </>

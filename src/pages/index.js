@@ -151,7 +151,8 @@ const IndexPage = () => (
                                 <div>{res.description}</div>
                                 <div align = 'right'>${res.price}</div>
                                 <div> <a 
-                                  href='#' 
+                                  href='#'
+                                  onClick="alert('Item added to Cart!')"
                                   className='snipcart-add-item'
                                   data-item-id={res._id}
                                   data-item-price={res.price}

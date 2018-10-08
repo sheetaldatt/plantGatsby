@@ -28,6 +28,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     <hr/>
+   <div class="snipcart-summary" style={{float: 'right' }}><a href="#" class="snipcart-checkout" >Cart (<span class="snipcart-total-items"></span>)</a></div>
+
+   
     </div>
   </div>
 )
