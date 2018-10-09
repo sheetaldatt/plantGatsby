@@ -46,6 +46,8 @@ return (
 	<nav className={`navbar ${this.state.visible ? 'active' : ''}`}>				
                 <div class="title">Plant A Tree</div>
 				<div class="btn toggle-btn" onClick={this.toggleVisibility}>Toggle Filters</div>
+                
+                <div class="mobileCart snipcart-summary" style={{float: 'right' }}><div class= "mobileLogin" style={{float: 'left' }}><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">Login / Register</span></a> <a href="#" class="snipcart-user-logout">Logout</a></div><a href="#" class="snipcart-checkout" >Cart (<span class="snipcart-total-items"></span>)</a></div>
                 <Filters {...this.props} visible={this.state.visible} />
                 </nav>   
     <div
@@ -70,6 +72,8 @@ return (
       </h1>
     <hr/>
     
+   <div class="snipcart-summary" style={{float: 'right' }}><a href="#" class="snipcart-checkout" >Cart (<span class="snipcart-total-items"></span>)</a></div>
+   <div style={{float: 'left' }}><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">Login / Register</span></a> <a href="#" class="snipcart-user-logout">Logout</a></div>    
    </div>
     </div>
               
