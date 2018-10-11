@@ -13,12 +13,18 @@ body {
 	padding: 1rem;
 	height: 100vh;
     position: fixed;
-  z-index: 0;
+    margin-right: 20%;
+  z-index: 3;
 }
+
 .title {
     display: none;
     color: white;
 	font-size: 2rem;
+}
+.results {
+    width: "100%";
+    margin-left: 0%;
 }
 .mobileCart {
     display: none;
@@ -160,7 +166,16 @@ p *:last-child {
   background: white;
 	color: mediumseagreen;
 }
-@media all and (max-width: 1200px) {
+
+@media all and (max-width: 1750px) 
+{
+    .results {
+    width: "100%";
+    margin-left: 20%;
+}
+        
+}
+@media all and (max-width: 1400px) {
   .title {
     display: block;
     text-align: center;
@@ -171,7 +186,6 @@ p *:last-child {
 .mobileLogin {
     display: block;
 }
-
   .toggle-btn {
     display: block;
   }
@@ -188,7 +202,10 @@ p *:last-child {
   .hidden {
     display: none;
   }
-    
+  .results {
+    width: "100%";
+    margin-left: 0%;
+}
 }
 
 @media only screen and (max-width: 480px) 

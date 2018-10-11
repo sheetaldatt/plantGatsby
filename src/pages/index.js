@@ -49,7 +49,8 @@ return (
                 
                 <div class="mobileCart snipcart-summary" style={{float: 'right' }}><div class= "mobileLogin" style={{float: 'left' }}><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">Login / Register</span></a> <a href="#" class="snipcart-user-logout">Logout</a></div><a href="#" class="snipcart-checkout" >Cart (<span class="snipcart-total-items"></span>)</a></div>
                 <Filters {...this.props} visible={this.state.visible} />
-                </nav>   
+    </nav>
+    <div style={{ display: "flex", flexDirection: "row", marginLeft: "20%", }}>
     <div
       style={{
         margin: '0 auto',
@@ -76,8 +77,7 @@ return (
    <div style={{float: 'left' }}><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email">Login / Register</span></a> <a href="#" class="snipcart-user-logout">Logout</a></div>    
    </div>
     </div>
-              
-                 <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div class="results">
 					<ResultList
 						componentId="result"
 						title="Results"
@@ -116,11 +116,10 @@ return (
                                 
 							}
 						}}
-					style={{
-								width: "100%",
-							}}
+
 						/>
                   </div>
+        </div>
 				</ReactiveBase>
   </Layout>)
     }
